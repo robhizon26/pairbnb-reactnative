@@ -47,8 +47,7 @@ const formReducer = (state, action) => {
   return state;
 };
 
-
-export default NewOffer = props => {
+const NewOffer = props => {
   const [isCreatingPlace, setIsCreatingPlace] = useState(false);
   const [isUploadingImage, setIsUploadingImage] = useState(false);
   const dispatch = useDispatch();
@@ -249,7 +248,7 @@ export default NewOffer = props => {
 
 export const screenOptions = navData => {
   return {
-    headerTitle: 'Add New Offer'
+    headerTitle: 'New Offer'
   };
 };
 
@@ -259,5 +258,5 @@ const styles = StyleSheet.create({
   dateForm: { width: '48%' },
 });
 
-
+export default NewOffer;
 
